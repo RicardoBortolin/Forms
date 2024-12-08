@@ -1,20 +1,15 @@
-import { View, Text } from 'react-native'
-import React from 'react'
-import * as S from '../styles/shippingStyles'
+import React from 'react';
+import Header from '../components/Header';
+import * as S from '../styles/HeaderStyles';
+import Steps from '../components/Steps';
 
-const shippingScreen = () => {
+const ShippingScreen = () => {
   return (
-    <S.Header>
-        <S.Cancel>
-          <S.CancelText>
-              Cancel
-          </S.CancelText>
-        </S.Cancel>
-        <S.TextHeader>
-          Checkout
-        </S.TextHeader>
-    </S.Header>
-  )
-}
+    <S.Container>
+      <Header />
+      <Steps />
+    </S.Container>
+  );
+};
 
-export default shippingScreen
+export default ShippingScreen;
