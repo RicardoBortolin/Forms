@@ -2,7 +2,6 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
   background-color: #f9f9f9;
-  width: 100%;
   height: 80px;
   display: flex;
   flex-direction: row;
@@ -10,7 +9,7 @@ export const Container = styled.View`
   padding-left: 8px;
   padding-right: 10px;
   border-bottom-width: 1px;
-  border-color: #f8f8f8;
+  border-color: #ececec;
 `;
 
 export const StepsButton = styled.Pressable`
@@ -27,19 +26,21 @@ export const ButtonLabelText = styled.Text`
   color: #fff;
   text-align: center;
   margin-top: 6px;
+  font-family: Inter-Regular;
 `;
 
 export const LabelBackground = styled.View`
   background-color: #0c0d0d;
   height: 35px;
   width: 35px;
-  border-radius: 100%;
+  border-radius: 100px;
   align-items: center;
 `;
 
 export const ButtonText = styled.Text`
   margin-left: 5px;
   font-size: 16px;
+  font-family: Inter-Regular;
 `;
 
 export const Line = styled.View`

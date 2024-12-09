@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-  height: 100%;
+  flex: 1;
   background-color: #ffffff;
 `;
 
@@ -28,9 +28,8 @@ export const CancelText = styled.Text`
 
 export const TextHeader = styled.Text`
   color: #f9f9f9;
-  font-size: 25;
-  font-family: 'Inter';
-  font-weight: bold;
+  font-size: 25px;
+  font-family: Inter-Bold;
   position: absolute;
-  left: 44%;
+  left: 150px;
 `;
