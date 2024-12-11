@@ -1,11 +1,16 @@
-import {View, Text} from 'react-native';
 import React from 'react';
+import * as S from '../styles/ButtonStyles';
+import {TouchableOpacityProps} from 'react-native';
 
-const ButtonFooter = () => {
+interface Button extends TouchableOpacityProps {}
+
+const ButtonFooter = ({onPress}: Button) => {
   return (
-    <View>
-      <Text />
-    </View>
+    <S.ButtonContainer>
+      <S.Button onPress={onPress}>
+        <S.ButtonText>Confirm and continue</S.ButtonText>
+      </S.Button>
+    </S.ButtonContainer>
   );
 };
 

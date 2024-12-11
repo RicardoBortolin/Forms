@@ -4,7 +4,6 @@ import * as S from '../styles/HeaderStyles';
 import Steps from '../components/Steps';
 import InputContainer from '../components/InputContainer';
 import Footer from '../components/Footer';
-import {Text} from 'react-native';
 
 const ShippingScreen = () => {
   return (
@@ -13,7 +12,6 @@ const ShippingScreen = () => {
       <Steps />
       <InputContainer />
       <Footer />
-      <Text>OI</Text>
     </S.Container>
   );
 };
