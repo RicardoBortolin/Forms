@@ -2,9 +2,7 @@ import React from 'react';
 import * as S from '../styles/ButtonStyles';
 import {TouchableOpacityProps} from 'react-native';
 
-interface Button extends TouchableOpacityProps {}
-
-const ButtonFooter = ({onPress}: Button) => {
+const ButtonFooter: React.FC<TouchableOpacityProps> = ({onPress}) => {
   return (
     <S.ButtonContainer>
       <S.Button onPress={onPress}>

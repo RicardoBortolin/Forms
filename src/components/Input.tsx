@@ -6,25 +6,14 @@ interface InputText extends TextInputProps {
   label: string;
 }
 
-const Input = ({
-  label,
-  placeholder,
-  onChangeText,
-  onBlur,
-  value,
-}: InputText) => {
+const Input = ({label, ...rest}: InputText) => {
   return (
     <S.InputView>
       <S.InputLabel>
         {label}
         <S.Required>*</S.Required>
       </S.InputLabel>
-      <S.InputArea
-        placeholder={placeholder}
-        onBlur={onBlur}
-        onChangeText={onChangeText}
-        value={value}
-      />
+      <S.InputArea {...rest} />
     </S.InputView>
   );
 };
